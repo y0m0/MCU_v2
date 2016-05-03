@@ -1,0 +1,9 @@
+('C:\\Users\\admin\\Dropbox\\python catalog\\Mcu v02\\dist\\millum_catalog_uploader.exe',
+ False,
+ False,
+ 'upload.ico',
+ 'version.txt',
+ [],
+ None,
+ False,
+ 1442180628L)
