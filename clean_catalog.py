@@ -24,6 +24,8 @@ def clean(catalog_file):
     # search for products to be removed from the catalog
         if storeid != '1' or prodtype == '(Ingen)' or prodtype == 'Div. bestillingsvarer' or 'oluf' in prodname:
             root.remove(g_otemp)
-
+    # remove product group entry for the alcohol % from the catalog
+        if prodtype == 'Alkoholholdige Drikkevarer':
+            g_otemp.find('prodgroupex').text = ""
 
     tree.write(catalog_file, pretty_print=True, encoding = 'Windows-1252')
